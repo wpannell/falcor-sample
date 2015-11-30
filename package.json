@@ -1,0 +1,28 @@
+{
+  "name": "falcor-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpannell/falcor-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wpannell/falcor-sample/issues"
+  },
+  "homepage": "https://github.com/wpannell/falcor-sample#readme",
+  "devDependencies": {
+    "babel-core": "6.2.1",
+    "babel-loader": "6.2.0",
+    "webpack": "1.12.9"
+  },
+  "dependencies": {
+    "falcor": "0.1.14",
+    "react": "0.14.3"
+  }
+}
