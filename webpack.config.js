@@ -1,10 +1,22 @@
+var webpack = require('webpack');
 module.exports = {
-  context: __dirname + '/app',
   entry: './index.js',
 
   output: {
-    path: __dirname + '/',
-    filename: 'bundle.js',
-    loader: ['babel-loader']
+    path: __dirname,
+    filename: 'bundle.js'
+  },
+
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015', 'react']
+        }
+      }
+    ]
   }
 };
